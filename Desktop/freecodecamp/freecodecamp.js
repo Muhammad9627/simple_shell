@@ -4,7 +4,7 @@
  * fovvhfv
  * apvhvl
  */
-number = 9;
+// number = 9;
 
 //data types and varriables
 /**undefined,null,boolean,string,symbol,number,object */
