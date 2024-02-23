@@ -553,3 +553,139 @@ for (let i = 0; i< 10; i++){
         text += x + "<br>"
     }
     console.log(text);
+    //
+    const fruits = new Map([
+        ["apples",500],
+        ["bananas",300]
+        ["oranges",200]
+    ]);
+    let text = "";
+    for (const x of fruits){
+        text += x "br";
+    }
+    console.log(text);
+    //javascript array set
+    const letters = new set(["a," "b," "c"]);
+    console.log(letter.size);
+    //
+    const letters = new set();
+    const a ="a";
+    const b ="b";
+    const c ="c";
+    const d ="d";
+
+    letters.add("a");
+    letters.add("b");
+    letters.add("c");
+    letters.add("d");
+    console.log(letters.size);
+    //
+    const letter = new set(["a","b","c"]);
+    letters.add("d");
+    letters.add("e");
+    console.log(letters.size);
+    //for each method
+    const letters = new set(["a","b","c"]);
+    let text = "";
+    letters.forEach(function (value) {
+        text += value;
+    })
+    console.log(text);
+    //array object
+    const fruits =["banana","orange","apple","mango"];
+    console.log(isArray(fruits));
+    function isArray(myArray) {
+        return myArray.constructor === Array;
+    }
+    myFunction();
+    console.log("I can display" + carName);
+    function myFunction() {
+        carName = "volvo";
+    }
+    // 
+    var x = 5;
+    elem = console.log("x is " + x + "and y is "+ y);
+    var y = 7;
+    //this
+    const person = {
+        firstName: "John",
+        lastName: "Doe",
+        id: 5566,
+        fullName : function () {
+            return this.firstName + "" + this.lastName;
+        };
+        console.log(person.fullName());
+    }
+    //
+    const person1 = {
+        fullName: function () {
+            return this.firstName + "" + this.lastName;
+            }
+    }
+    const person2 = {
+        firstName:"John",
+        lastName:"Doe",
+    }
+    let x = person1.fullName.call(person2);
+    console.log(x);
+    //
+    const person = {
+        fullName: function () {
+            return this.firstName + "" + this.lastName;
+            }
+    }
+    const member = {
+        firstName:"Hege",
+        lastName:"Nilsen",
+    }
+    let fullName = person.fullName.bind(member);
+    console.log(fullName);
+    //class syntax
+    class car {
+        constructor(name, year){
+    this.name = name;
+    this.year = year;
+    }
+age(){
+    const date = new Date();
+    return date.getFullYear() - this.year;
+}
+}
+const myCar = new car("Ford",2014);
+console.log("My car is"+ myCar.age() + "year old.");
+json parse(text)
+let text = '{"employees":[' + '{"firstName":"John","lastName":"Doe"},' + '{"firstName":"Anna","lastName":"Smith"},' + '{"firstName":"Peter","lastName":"Jones"}]}';
+const obj = JSON.parse(text);
+console.log(obj.employees[1].firstName + " " + obj.employees[1].lastName); 
+//code indentation
+function toCelsius(fahrenheit) {
+    return (5/9) * (fahrenheit - 32);
+}
+//switch case
+let day;
+switch (new Date().getDay()) {
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case 6:
+        day = "Saturday";
+        break;
+    default:
+        day = "unknown";
+}
+console.log("Today is " + day);
